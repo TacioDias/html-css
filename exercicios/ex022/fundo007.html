@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        section, article    {
+            border: 5px solid black;
+            border-radius:10px;
+        }
+        #container  {
+            /*display: flex;
+            justify-content: center;
+            align-items: center;*/
+            background: aquamarine url('imagens/target001.png') center center no-repeat scroll;
+            background-size: 100% 100%;
+            position: relative;
+            height: 97vh;
+            
+        }
+        #conteudo   {
+            background: bisque url('imagens/target001.png') center center no-repeat scroll;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
-<body>
-    
+<body style="margin: 0;">
+    <section id="container">
+        <article id="conteudo"></article>
+    </section>
 </body>
 </html>
