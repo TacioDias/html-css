@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body    {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+
+        }
+
+        #tela  {
+            width: 50vw;
+            height: 450px   ;
+            border: 2px solid whitesmoke;
+            background-color: rgba(255, 255, 255, 0.025);
+
+        }
+
+        p   {
+            width: 700px;
+        }
+
+        ul  {
+            display: flex;
+            flex-direction: row;
+        }
+
+        li  {
+            padding: 5px;
+            border-radius: 6px;
+            background-color: rgba(128, 128, 128, 0.28);
+            list-style-type: none;
+            margin-right: 30px;
+        }
+
+        li:hover    {
+            background-color: rgba(128, 128, 128, 0.455);
+        }
+
+        .paginas a   {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha:</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam impedit rem corrupti, architecto facere in perferendis modi minus fugiat non ab consectetur dolor? Eaque saepe nobis sed ipsum, quibusdam omnis?</p>
+
+    <ul>
+        <li class="paginas"><a href="paginas-extras/pag001.html" target="frame">Primeira pagina</a></li>
+        <li class="paginas"><a href="paginas-extras/pag002.html" target="frame">Segunda pagina</a></li>
+        <li class="paginas"><a href="paginas-extras/pag003.html" target="frame">Terceira pagina</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel harum tempora eos sint nemo animi dolor esse repudiandae corrupti quos neque non porro aut aperiam, qui maxime perspiciatis facere incidunt?</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1 style='color:white;'>Escolha uma das opções</h1><img src='img/Wtcd.jpg' style='background-size:100px;'>" frameborder="0">
+        <p>Infelizmente seu navegador não é compativel.</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas obcaecati dolorem, commodi repellat accusamus itaque minus maxime, debitis molestias pariatur tempore enim omnis harum sit dignissimos nulla dolorum et esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus vitae atque at ut itaque voluptatum facilis, quasi tenetur sequi nesciunt iusto officiis harum. Incidunt ullam eius harum ipsam accusantium blanditiis.</p>
+</body>
+</html>
